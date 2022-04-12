@@ -1,0 +1,63 @@
+c BreakID not compiled in, disabling
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision GIT-notfound
+c CMS is MIT licensed
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = clang++ | CMAKE_CXX_FLAGS =  -fno-stack-protector -Wno-bitfield-constant-conversion -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DNDEBUG -D_FORTIFY_SOURCE=0 -DBOOST_TEST_DYN_LINK -DUSE_SQLITE3 -DUSE_ZLIB | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND =  | NOM4RI = ON | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = OFF | PYTHON_EXECUTABLE = /usr/local/bin/python3 | PYTHON_LIBRARY = /usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib | PYTHON_INCLUDE_DIRS = /usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/include/python3.9 | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Feb 18 2022 22:03:49
+c CMS compiled with gcc version Apple LLVM 13.0.0 (clang-1300.0.29.30)
+c Executed with command line: cryptominisat5
+c Reading from standard input... Use '-h' or '--help' for help.
+c -- clauses added: 634350
+c -- xor clauses added: 0
+c -- vars added 153600
+c Parsing time: 0.19 s
+c clause size stats. size3: 139500 size4: 0 size5: 0 larger: 1500
+c [find&init matx] XORs not updated, and either (XORs are not detached OR assumps does not contain clash variable) -> or not performing matrix init
+c [polar] polar mode: auto branch strategy num: 0 branch strategy: VSIDSX
+c  res  pol bran  nres  conf freevar  IrrL  IrrB l/longC  l/allC RedL0 RedL1 RedL2  RedB l/longC  l/allC
+c glue auto  vsx    19  8193   22500  141K  492K    4.02    2.45     1     1  8190     1  280.54  280.51
+c geom auto  vsx    28 16386   22500  141K  492K    4.02    2.45     2     2  8444     1  320.42  320.39
+c glue auto  vsx    35   24K   22500  141K  492K    4.02    2.45     2     2 16637     1  314.89  314.87
+c glue auto  vsx    39   32K   22500  141K  492K    4.02    2.45     2     3 12769     1  274.14  274.12
+c glue auto  vsx    43   40K   22500  141K  492K    4.02    2.45     2     3   20K     1  301.94  301.93
+c glue auto  vsx    47   49K   22500  141K  492K    4.02    2.45     2     4 15609     1  347.92  347.90
+c 
+c ------- FINAL TOTAL SEARCH STATS ---------
+c UIP search time          : 8.01        (97.68     % time)
+c restarts                 : 48          (1093.29   confls per restart)
+c blocked restarts         : 0           (0.00      per normal restart)
+c time                     : 8.01        
+c decisions                : 91098       (0.00      % random)
+c propagations             : 41M         (5174K     props/s)
+c decisions/conflicts      : 1.74        
+c conflicts                : 52478       (6554.94   / sec)
+c conf lits non-minim      : 17503363    (333.54    lit/confl)
+c conf lits final          : 318.25      
+c red which0               : 1           (0.00      % of confl)
+c props/decision           : 454.75      
+c props/conflict           : 789.42      
+c 0-depth assigns          : 145465      (94.70     % vars)
+c 0-depth assigns by CNF   : 131100      (85.35     % vars)
+c reduceDB time            : 0.01        (0.13      % time)
+c OccSimplifier time       : 0.00        (0.00      % time)
+c [occur] 0.00 is overhead
+c [occur] link-in T: 0.00 cleanup T: 0.00
+c [occ-substr] long subBySub: 0 subByStr: 0 lits-rem-str: 0 T: 0.00
+c SCC time                 : 0.00        (0.00      % time)
+c [scc] new: 0 BP 0M  T: 0.00
+c vrep replace time        : 0.00        (0.00      % time)
+c vrep tree roots          : 0           
+c vrep trees' crown        : 0           (0.00      leafs/tree)
+c distill time             : 0.00        (0.02      % time)
+c strength cache-irred time: 0.00        (0.00      % time)
+c strength cache-red time  : 0.00        (0.00      % time)
+c Conflicts in UIP         : 52478       (6402.63   confl/time_this_thread)
+c Mem used                 : 0.00        MB
+c Total time (this thread) : 8.20        
